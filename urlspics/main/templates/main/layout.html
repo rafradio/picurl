@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>Short URL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'main/css/styles.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form>{% csrf_token %}</form>
+    <div class="container">
+        <fieldset class="flex-fieldset">
+            <legend>Введите URL</legend>
+            <form action=""><input type="file" class="choose_photo_block" id="first" name="myfile" accept=".jpg, .jpeg, .png, .gif, .heic"></form>
+            <div class="elements">                   
+                <label for="UResult">Ваш результат:</label>
+                <input type="text" id="UResult" name="UResult">
+                <button id="Copy">Copy</button>
+            </div>
+        </fieldset>
+    </div>
+    <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>

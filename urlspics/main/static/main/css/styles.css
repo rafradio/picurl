@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto Flex', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #ececec;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 85%;
+    width: 60%;  
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 1px 12px rgba(0,0,0, 0.20); 
+}
+.form-url {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.elements {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.flex-fieldset {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: 65%;
+    border: 0.2px solid #9c9c9c;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #606060;
+    padding: 20px 20px;
+}
+.flex-fieldset legend {
+    font-size: 12px;
+    color: #9c9c9c;
+}
+input {
+    width: 50%;
+}
+button {
+    cursor: pointer;
+}
+.picture-front-block {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0.2px solid rgb(195, 195, 195);
+}
+.select-for-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+}
+.delete-for-photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.wrap-picture-front {
+    display: flex;
+    flex-wrap: wrap;
+}
